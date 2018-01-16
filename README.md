@@ -14,12 +14,23 @@ function Decoder(bytes, port) {
 }
 ```
 
-## Links
-* https://pycom.io/product/lopy/
-* https://pycom.io/product/pytrack/
+## Libraries
+Requires the following library files obtained from <https://github.com/pycom/pycom-libraries>, install in the `lib` directory:
+* L76GNSS.py
+* pycoproc.py
+* pytrack.py
 
 ## LED status
 * flashing cyan = connecting to LoRaWAN
 * red = no gps lock
 * blue = got gps, will upload if moved
 * green = uploaded
+
+## Issues
+
+Memory is short in the LoPy and the PyTrack library seems to be a known memory hog.
+
+## Links
+* https://pycom.io/product/lopy/
+* https://pycom.io/product/pytrack/
+
